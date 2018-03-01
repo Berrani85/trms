@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TRMS-login</title>
+
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+			  src="http://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+</script>
+
+<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="resource/css/main.css">
+<link rel="stylesheet" type="text/css" href="resource/css/mainSheet.css">
+
+</head>
+<body >
+<div class="collapse navbar-collapse js-navbar-collapse navbar-fixed-top" style="background-color:black">
+         <a class="navbar-brand brand" href="index.html">
+      <span class="glyphicon glyphicon-home">TRMS</span></a>
+      
+         <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="http://localhost:8085/trms/TRMS-Login.html"><span class="glyphicon glyphicon-log-in"></span> &nbsp;Log In</a>
+            </li>
+         </ul>
+</div>         
+
+
+<div class="container-fluid" >
+  
+        
+   <div class="well"  id="login-ui">
+   
+    <h2 style="text-align:center"> Welcome to TRMS</h2>
+    <form action="AdminLogin" method="post">
+   <table id="tab1">
+		<tr>
+			<th style="width:45%; align-content: center; padding:10px;">Admin Login &nbsp;&nbsp; </th>
+			<td><p style="padding-left:2cm"></p></td>
+			<th style="width:45%">Login As:</th>
+		</tr>
+		<tr>
+			<td> 
+		         
+                   <div class="form-group">
+                   
+                    <label for="username">Username</label>
+                       <input type="text" class="form-control" id="uName" name="username" required>
+                   </div>
+             </td>
+             <td> <p style="padding-left:1cm"></p></td>
+             <td>  <input type="radio" value="1" name="admin" checked="checked">&nbsp;<label>BenCo Administrator</label><br>
+                   <input type="radio" name="admin" value="1">&nbsp;<label>Supervisor or manager</label><br>
+                   <input type="radio" value="2" name="admin">&nbsp;<label>Head of a Departement</label>
+               </td>
+        </tr>
+        <tr>
+              <td>     <div class="form-group">
+                     <label for="pwd">Password:</label>
+                       <input type="password" class="form-control" id="pwd" name="password" required>
+                   </div>
+               </td>
+               <td><p style="padding-left:1cm"></p></td>
+               <td> </td>
+          </tr>
+          <tr>
+               <td>
+                    <button type="submit" class="btn btn-default" >LOG IN</button>
+                	<br>
+                 <a href="#"><span>Forget Username/Password?</span> </a>
+               </td>
+               <td><p style="padding-left:1cm"></p></td>
+               <td>   </td>
+           </tr>
+           
+		
+	</table>
+   </form>  
+       
+   </div>
+   </div>
+ 
+</body>
+</html>

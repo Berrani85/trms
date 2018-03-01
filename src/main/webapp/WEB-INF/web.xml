@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>trms</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Authentication</display-name>
+    <servlet-name>Authentication</servlet-name>
+    <servlet-class>loginui.Authentication</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Authentication</servlet-name>
+    <url-pattern>/Authentication</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetUser</display-name>
+    <servlet-name>GetUser</servlet-name>
+    <servlet-class>loginui.GetUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetUser</servlet-name>
+    <url-pattern>/TRMS-LOGIN/GetUser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewRequest</display-name>
+    <servlet-name>NewRequest</servlet-name>
+    <servlet-class>empaccount.NewRequest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewRequest</servlet-name>
+    <url-pattern>/TRMS-LOGIN/NewRequest</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    
+    <description>Admin Front controle  </description>
+    <display-name>AdminLogin</display-name>
+    <servlet-name>AdminLogin</servlet-name>
+    <servlet-class>servlets.admin.AdminLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLogin</servlet-name>
+    <url-pattern>/AdminLogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdminAccount</display-name>
+    <servlet-name>AdminAccount</servlet-name>
+    <servlet-class>servlets.admin.AdminAccount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminAccount</servlet-name>
+    <url-pattern>/adminlogin/AdminAccount</url-pattern>
+  </servlet-mapping>
+</web-app>
